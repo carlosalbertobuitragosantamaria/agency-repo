@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* ///////////////////////  HEADER  /////////////////////////// */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.link__logo {
+    
+} 
+
+.logo {
+    flex-grow: 2;
+    width: 4rem;
+    padding-left: 1rem;
+}
+
+.header__title {
+    flex-grow: 2;
+    text-align: center;
+    margin: 0;
+}
+
+.menu {
+    padding-right: 1rem;
+    flex-basis: 100%;
+    order: 2;
+    
+}
+.menu__list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.menu__item {
+    padding-right: 1rem;
+}
+
+
+
+/* //////////////////  INTRODUCTION ////////////////////// */
+
+.intro__image_container {
+    background-image: url(imgs/jupiter.webp);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;  /* removes a gap to the right that shows on bigger screnns*/
+    padding: 7rem 2rem;
+}
+
+.intro__paragraph {
+    color: white;
+    font-size: 2rem;
+}
+
+.main__description {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.description__title {
+    text-align: center;
+    margin-top: 3.5rem;
+    margin-bottom: 0;
+}
+
+.description__paragraph {
+    text-align: center;
+    margin-top: .1rem;
+}
+
+
+/* //////////////////////////  FOOTER  ///////////////////////// */
+
+.footer__menu {
+    padding: 4rem;
+}
+
+/* ///////////////////// BIGGER SCREENS ///////////////// */
+
+@media screen and (min-width: 700px) {
+
+    /* /////////////////// MENU ////////////////////////// */
+    .menu {
+        flex-basis: initial;
+        order: initial;
+    }
+    /* //////////////// INTRODUCTION ///////////////////// */
+    .intro__image_container {
+        padding: 8rem 12rem;
+    }
+
+    .main__description {
+        margin-left: 30vw;
+        margin-right: 30vw;
+    }
+
+    /* ////////////////// FOOTER MENU  ////////////////////////// */
+    .footer__menu {
+        display: flex;
+        justify-content: center;
+    }
+    .footer__menu_item {
+        flex-grow: 3;
+    }
+
+}
