@@ -17,22 +17,18 @@ img {
     flex-wrap: wrap;
     align-items: center;
     padding-top: 1rem;
+    justify-content: space-between;
 }
 
-.link__logo {
-    
-} 
-
 .logo {
-    flex-grow: 2;
     width: 4rem;
     padding-left: 1rem;
 }
 
 .header__title {
-    flex-grow: 2;
+    flex-grow: 1;
     text-align: center;
-    margin: 0;
+    
 }
 
 .menu {
@@ -42,6 +38,7 @@ img {
     
 }
 .menu__list {
+    padding-left: 0;
     display: flex;
     list-style-type: none;
     justify-content: center;
@@ -99,6 +96,13 @@ img {
     .menu {
         flex-basis: initial;
         order: initial;
+    }
+    .header {
+
+    }
+    .header__title {
+
+        padding-left: 3rem;
     }
     /* //////////////// INTRODUCTION ///////////////////// */
     .intro__image_container {
