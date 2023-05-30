@@ -1,5 +1,6 @@
 html{
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
 }
 
 * {
@@ -62,7 +63,6 @@ img {
 
 .intro__paragraph {
     color: white;
-    font-size: 2rem;
 }
 
 .main__description {
