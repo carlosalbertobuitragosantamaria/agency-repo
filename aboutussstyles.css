@@ -1,25 +1,48 @@
+
 main{
     display: flex;
     flex-direction: column;
     max-width: 800px ;    
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;    
 }
-.bio{
+
+.main__intro {
+    padding: 0 1rem;
+}
+.bio__card{
     display: flex;
     background-image: url(imgs/jupiter.webp);
+    background-repeat: no-repeat;
     max-width: 800px ;    
     margin-left: auto;
     margin-right: auto;
     color: azure;
     margin-top: 4rem;
-    
+}
+
+.card__description {
+    text-shadow:   1px 1px 4px black,
+    -1px -1px 4px black,
+    1px -1px 4px black,
+    -1px 1px 4px black;
+    letter-spacing: 2px;
 }
 
 @media screen and (max-width: 700px) {
-.bio{
-    flex-direction: column;
-}
+
+    p {
+        font-size: 1.4rem;
+    }
+    .bio__card{
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        background-position: center;
+    }
+    .robots {
+        max-width: 70%;
+    }
+
 
 }
