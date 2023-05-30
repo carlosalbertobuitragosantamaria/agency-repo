@@ -1,4 +1,8 @@
-.center{
+main {
+  padding: 0 1rem;
+}
+
+.center, main {
     max-width: 30rem;
 margin-left: auto;
 margin-right: auto;
