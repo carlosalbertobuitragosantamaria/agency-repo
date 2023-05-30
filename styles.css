@@ -58,11 +58,18 @@ img {
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;  /* removes a gap to the right that shows on bigger screnns*/
+    background-position: center;
     padding: 7rem 2rem;
 }
 
-.intro__paragraph {
+.intro__paragraph,
+.into__title {
     color: white;
+    text-shadow:   1px 1px 4px black,
+    -1px -1px 4px black,
+    1px -1px 4px black,
+    -1px 1px 4px black;
+    letter-spacing: 2px;
 }
 
 .main__description {
